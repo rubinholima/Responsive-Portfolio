@@ -1,41 +1,32 @@
+/* Html And Body  */
 html,
 body {
     height: 100%;
     margin: 0;
+    margin-bottom: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Style the name, menu and the header -  main header, header, h1, topnav class */
 .main_header {
+    position: fixed;
+    height: 55px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
     background-color: #ffffff;
     border-bottom: 1px solid #cccccc;
 }
 
 header {
     width: 960px;
-    height: 55px;
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-img {
-    float: left;
-    padding-right: 10px;
-    padding-top: 10px;
-}
-
-.monu {
-    width: 960px;
-    height: 560px;
-    background-color: white;
-    margin: auto;
-    text-align: justify;
-    padding: 25px;
-    border: 1px solid gray;
-}
-
 h1 {
-    width: 206px;
+    margin-top: 0;
+    width: 30%;
     padding: 14px;
     margin-left: -24px;
     color: #ffffff;
@@ -44,26 +35,16 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-h2 {
-    margin-top: -7px;
-    color: #4aaaa5;
-    font-size: 28px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
 .topnav {
     position: relative;
-    right: -25px;
+    right: -27px;
     top: -55px;
     text-align: right;
     font-size: 14px;
 
 }
 
-p {
-    box-align: "justify";
-}
-
+/* Anchor style with hover on the topnav class */
 a {
     color: #777777;
     padding-right: 12px;
@@ -82,19 +63,53 @@ a:hover {
     background-color: #b6c7c7;
 }
 
+/* Separator  bars */
 #port {
     border-left: 1px solid #a4a2a2;
     border-right: 1px solid #a4a2a2;
 }
 
+/* Main session - wrapper and monu classes */
 .wrapper {
-    padding-top: 31px;
+    padding-top: 77px;
     min-height: 80%;
     margin-bottom: -50px;
     background-image: url(../images/beige-tiles.png);
 }
 
+.monu {
+    width: 960px;
+    height: auto;
+    min-height: 100%;
+    overflow: auto;
+    background-color: white;
+    margin: auto;
+    text-align: justify;
+    padding: 25px;
+    border: 1px solid gray;
+}
 
+/* Photo Principal - Rubinho Lima  */
+img {
+    float: left;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+/* Sub Title Style  */
+h2 {
+    margin-top: -7px;
+    color: #4aaaa5;
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Paragraph style  */
+p {
+    box-align: "justify";
+}
+
+/* Photo gallery style  */
 div.gall img {
     width: 190px;
     height: 165px;
@@ -108,6 +123,7 @@ div.gall {
     height: 165px;
 }
 
+/* Label style  */
 div.desc {
     position: relative;
     bottom: 33%;
@@ -121,57 +137,46 @@ div.desc {
     box-sizing: border-box;
 }
 
-
+/* footer style - fixed  */
 footer {
+    width: 100%;
+    position: fixed;
+    Left: 0;
+    bottom: 0;
     text-align: center;
     color: white;
     background-color: #666666;
     padding-top: 20px;
     border-top: 8px solid #4aaaa5;
-
-}
-
-.push,
-.footer {
     height: 50px;
+
 }
 
-/* format 980px */
+/* format 980px
+-------------------------------------------------- */
 
 @media screen and (max-width: 980px) {
 
+    /* Html And Body  */
     html,
     body {
-        width: 980px;
-
-    }
-
-    header {
-        margin-top: -20px;
-        position: static;
         width: 100%;
-        height: 75px;
     }
 
-    .wrapper {
-        margin-top: 0px;
+    /* Style the name, menu and the header - , header, h1, topnav class - 980px */
+    header {
+        margin-top: -21px;
+        width: 100%;
+        height: 85px;
     }
-
-    .monu {
-        width: 530px;
-        height: 980px;
-        margin-left: 17px;
-        text-align: justify;
-        padding: 25px;
-        border: 1px solid gray;
-    }
-
 
     h1 {
         width: 30%;
-        margin-left: 15px;
+        margin-top: 21px;
+        margin-left: 20px;
+        margin-bottom: 0;
         text-align: center;
-        padding: 24px;
+        padding: 14px;
         color: #ffffff;
         background-color: #4aaaa5;
 
@@ -179,18 +184,38 @@ footer {
 
     .topnav {
         position: relative;
-        top: -75px;
-        right: -255px;
+        top: -38px;
+        right: -13px;
         text-align: center;
         font-size: 14px;
 
+
     }
 
+    /* Main session - wrapper and monu classes - 980px */
+    .wrapper {
+        margin-top: 0px;
+    }
+
+    .monu {
+        width: 530px;
+        height: auto;
+        min-height: 100%;
+        overflow: auto;
+        margin-left: 17px;
+        text-align: justify;
+        padding: 25px;
+        padding-bottom: 76px;
+        border: 1px solid gray;
+    }
+
+    /* Main session - line redimension - 980px */
     hr {
         width: 528px;
         margin: 0;
     }
 
+    /* Photo Principal - Rubinho Lima - 980px  */
     img {
         float: left;
         padding-right: 10px;
@@ -198,12 +223,14 @@ footer {
         height: 220px;
     }
 
+    /* Paragraph style - 980px  */
     p {
         box-align: "justify";
         padding-right: 0px;
         font-size: 12px;
     }
 
+    /* Photo gallery style - 980px  */
     div.gall img {
         margin-left: 10px;
         width: 210px;
@@ -219,8 +246,7 @@ footer {
         height: 190px;
     }
 
-
-
+    /* Label style  980px */
     div.desc {
         padding: 19px;
         width: 210px;
@@ -234,46 +260,51 @@ footer {
 
     }
 
+    /* footer style -  */
+    footer {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        color: white;
+        background-color: #666666;
+        padding-top: 20px;
+        border-top: 8px solid #4aaaa5;
+        height: 50px;
+
+    }
+
+    /* top form - 980px */
     #form1 {
         margin-top: 10px;
     }
 }
-/* format 768px */
+
+/* format 768px
+-------------------------------------------------- */
 
 @media (max-width: 768px) {
 
+    /* Html And Body - 768px  */
     html,
     body {
-        width: 768px;
+        margin-bottom: 150px;
 
     }
 
+    /* Style the name, menu and the header - , header, h1, topnav class - 768px */
     header {
-        margin-top: -20px;
-        position: static;
+        margin-top: -21px;
         width: 100%;
-        height: 75px;
+        height: 85px;
     }
-
-    .wrapper {
-        margin-top: 0px;
-    }
-
-    .monu {
-        width: 678px;
-        height: 980px;
-        margin-left: 17px;
-        text-align: justify;
-        padding: 25px;
-        border: 1px solid gray;
-    }
-
 
     h1 {
-        width: 30%;
-        margin-left: 15px;
+        width: 35%;
+        margin-top: 21px;
+        margin-left: 20px;
+        margin-bottom: 0;
         text-align: center;
-        padding: 24px;
+        padding: 14px;
         color: #ffffff;
         background-color: #4aaaa5;
 
@@ -281,18 +312,37 @@ footer {
 
     .topnav {
         position: relative;
-        top: -75px;
-        right: -255px;
+        top: -38px;
+        right: -259px;
         text-align: center;
         font-size: 14px;
 
     }
 
+    /* Main session - wrapper and monu classes - 768px */
+    .wrapper {
+        margin-top: 0px;
+    }
+
+    .monu {
+        width: 678px;
+        height: auto;
+        min-height: 100%;
+        overflow: auto;
+        margin-left: 17px;
+        text-align: justify;
+        padding: 25px;
+        padding-bottom: 76px;
+        border: 1px solid gray;
+    }
+
+    /* Main session - line redimension - 768px */
     hr {
         width: 676px;
         margin: 0;
     }
 
+    /* Photo Principal - Rubinho Lima - 768px  */
     img {
         float: left;
         padding-right: 10px;
@@ -300,12 +350,14 @@ footer {
         height: 320px;
     }
 
+    /* Paragraph style - 768px  */
     p {
         box-align: "justify";
         padding-right: 0px;
         line-height: 25px;
     }
 
+    /* Photo gallery style - 768px  */
     div.gall img {
         margin-left: 50px;
         width: 260px;
@@ -316,11 +368,11 @@ footer {
     div.gall {
         float: left;
         margin-left: 10px;
-        /* margin-top: 50; */
         width: 260px;
         height: 180x;
     }
 
+    /* Label style  768px */
     div.desc {
         padding: 20px;
         width: 260px;
@@ -335,41 +387,43 @@ footer {
 
     }
 
+    /* footer style -  */
+    footer {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        color: white;
+        background-color: #666666;
+        padding-top: 20px;
+        border-top: 8px solid #4aaaa5;
+        height: 50px;
+
+    }
+    /* top form - 768px */
     #form1 {
         margin-top: 10px;
     }
 }
 
-/* format 640px */
+/* format 640px
+-------------------------------------------------- */
 
 @media (max-width: 640px) {
-
+    /* Html And Body - 640px  */
     html,
     body {
-        width: 640px;
+        height: 100%;
+        margin-bottom: 0;
+
 
     }
 
+    /* Style the name, menu and the header - , header, h1, topnav class - 640px */
     header {
-        margin-top: -20px;
-        position: static;
+        margin-top: -71px;
         width: 100%;
         height: 55px;
     }
-
-    .wrapper {
-        margin-top: 50px;
-    }
-
-    .monu {
-        width: 548px;
-        height: auto;
-        margin-left: 17px;
-        text-align: justify;
-        padding: 25px;
-        border: 1px solid gray;
-    }
-
 
     h1 {
         width: 100%;
@@ -383,13 +437,29 @@ footer {
 
     .topnav {
         position: relative;
-        top: -5px;
+        top: 17px;
         right: 0;
         text-align: center;
         font-size: 14px;
 
     }
 
+    /* Main session - wrapper and monu classes - 640px */
+    .wrapper {
+        margin-top: 50px;
+    }
+
+    .monu {
+        width: 548px;
+        height: auto;
+        margin-left: 17px;
+        text-align: justify;
+        padding: 25px;
+        padding-bottom: 59px;
+        border: 1px solid gray;
+    }
+
+    /* Main session - line redimension - 640px */
     hr {
         width: 548px;
         margin: 0;
@@ -402,12 +472,14 @@ footer {
         height: 710px;
     }
 
+    /* Paragraph style - 640px  */
     p {
         box-align: "justify";
         padding-right: 0px;
         line-height: 25px;
     }
 
+    /* Photo gallery style - 640px  */
     div.gall {
         margin-left: -5px;
         margin-top: 50px;
@@ -424,6 +496,7 @@ footer {
 
     }
 
+    /* Label style  640px */
     div.desc {
         padding: 20px;
         width: 540px;
@@ -437,11 +510,21 @@ footer {
 
     }
 
+    /* footer style -  */
+    footer {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        color: white;
+        background-color: #666666;
+        padding-top: 20px;
+        border-top: 8px solid #4aaaa5;
+        height: 50px;
+
+    }
+
+    /* top form - 640px */
     #form1 {
         margin-top: 10px;
     }
 }
-
-
-
-
